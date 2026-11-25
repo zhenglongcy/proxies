@@ -279,7 +279,8 @@ proxies:
     path:
     - /x
     headers:
-      Host: down-cdn.dingtalk.com
+      Host:
+      - down-cdn.dingtalk.com
 - name: 美国-Buffalo-HostPapa-260517-23567
   type: vmess
   server: 172.245.106.236
@@ -294,7 +295,8 @@ proxies:
     path:
     - /x
     headers:
-      Host: down-cdn.dingtalk.com
+      Host:
+      - down-cdn.dingtalk.com
 - name: 🇮🇹 意大利 01 @clashv8
   type: ss
   server: 202.50.253.63
