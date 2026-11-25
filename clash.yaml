@@ -48,42 +48,28 @@ proxies:
   cipher: aes-256-gcm
   password: vyrzxzt9yix5jocj
   udp: true
-- name: 🇯🇵 日本 07 @clashv8
+- name: 🇯🇵 日本 10 @clashv8
   type: vless
-  server: 139.162.91.247
+  server: jp2upload.jumpernode.site
   port: 443
-  uuid: 8cfdacf8-e781-42f0-9872-8d1d22469de5
-  network: ws
+  uuid: f325fb7d-cad5-4ac8-8888-3f39b4b9d1ca
+  network: tcp
   udp: true
   tls: true
-  servername: itunes.apple.com
+  servername: shop.business.amazon.com
   client-fingerprint: chrome
+  flow: xtls-rprx-vision
   reality-opts:
-    public-key: _gFFckW3h8hFfllawgec9U2PDBeLJeCK_Jgk1S5tgC8
-    short-id: 536d7739
+    public-key: GeKuYNeAqQQkTN9OMJxXA9I-rXs7IiGh4Sl82crCITc
+    short-id: 83faf94a0e
   packet-encoding: xudp
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- name: 🇸🇬 新加坡 01 @clashv8
-  type: vless
-  server: 172.104.48.162
-  port: 443
-  uuid: 0dbe84f8-74fd-4bd1-99fe-e67eb7eaff85
-  network: ws
+- name: JP-vip-327
+  type: trojan
+  server: win2loxfde0303.gggrelay.org
+  port: 34745
+  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
   udp: true
-  tls: true
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 8yWkbzkxKDySkY_xUKZCb7z-XnoNIvq7bJpa_-8BiX8
-    short-id: 9360f0d0
-  packet-encoding: xudp
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
+  sni: nu3rb.supertoolify.com
 proxy-groups:
 - name: PROXY
   type: select
@@ -91,8 +77,8 @@ proxy-groups:
   - rn-x-590777963
   - mao.kipfelmao.de5.net
   - Hong Kong 02 ss汐云
-  - 🇯🇵 日本 07 @clashv8
-  - 🇸🇬 新加坡 01 @clashv8
+  - 🇯🇵 日本 10 @clashv8
+  - JP-vip-327
   - DIRECT
 rules:
-  - MATCH,PROXY
+- MATCH,PROXY
