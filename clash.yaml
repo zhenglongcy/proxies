@@ -1,0 +1,38 @@
+port: 7890
+socks-port: 7891
+allow-lan: false
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  nameserver:
+    - 223.5.5.5
+    - 8.8.8.8
+
+proxies:
+  - name: rn-x-590777963
+    type: vless
+    server: rn.iping.ggff.net
+    port: 443
+    uuid: dda9d36f-7be4-49bf-a126-080f74db6e4a
+    network: tcp
+    udp: true
+    tls: true
+    servername: iping.ggff.net
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    reality-opts:
+      public-key: viV_NqRUI4_aF0vTeNqyDvYbsMy-5t1wj5kxagV5ziA
+      short-id: 846c0f0d7d8dcb
+
+proxy-groups:
+  - name: PROXY
+    type: select
+    proxies:
+      - rn-x-590777963
+      - DIRECT
+
+rules:
+  - MATCH,PROXY
