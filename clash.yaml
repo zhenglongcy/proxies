@@ -26,12 +26,29 @@ proxies:
     reality-opts:
       public-key: viV_NqRUI4_aF0vTeNqyDvYbsMy-5t1wj5kxagV5ziA
       short-id: 846c0f0d7d8dcb
+  - name: mao.kipfelmao.de5.net
+    type: vless
+    server: mao.kipfelmao.de5.net
+    port: 443
+    uuid: 30610baf-4645-4c7b-9a22-0d0a0a79eab5
+    network: ws
+    udp: true
+    tls: true
+    servername: mao.kipfelmao.de5.net
+    skip-cert-verify: true
+    client-fingerprint: chrome
+    packet-encoding: xudp
+    ws-opts:
+      path: /api/v1/guests/profiles/5de14443985f/
+      headers:
+        Host: mao.kipfelmao.de5.net
 
 proxy-groups:
   - name: PROXY
     type: select
     proxies:
       - rn-x-590777963
+      - mao.kipfelmao.de5.net
       - DIRECT
 
 rules:
