@@ -48,21 +48,6 @@ proxies:
   cipher: aes-256-gcm
   password: vyrzxzt9yix5jocj
   udp: true
-- name: 🇯🇵 日本 10 @clashv8
-  type: vless
-  server: jp2upload.jumpernode.site
-  port: 443
-  uuid: f325fb7d-cad5-4ac8-8888-3f39b4b9d1ca
-  network: tcp
-  udp: true
-  tls: true
-  servername: shop.business.amazon.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: GeKuYNeAqQQkTN9OMJxXA9I-rXs7IiGh4Sl82crCITc
-    short-id: 83faf94a0e
-  packet-encoding: xudp
 - name: JP-vip-327
   type: trojan
   server: win2loxfde0303.gggrelay.org
@@ -77,7 +62,6 @@ proxy-groups:
   - rn-x-590777963
   - mao.kipfelmao.de5.net
   - Hong Kong 02 ss汐云
-  - 🇯🇵 日本 10 @clashv8
   - JP-vip-327
   - DIRECT
 rules:
