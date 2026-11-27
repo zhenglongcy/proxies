@@ -55,6 +55,13 @@ proxies:
   password: 57beeeb0-03fc-4fc9-94da-7604488a7134
   udp: true
   sni: nu3rb.supertoolify.com
+- name: HK-vip-119
+  type: trojan
+  server: hkdy1.mateflora.com
+  port: 443
+  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  udp: true
+  sni: psstatic.cdn.bcebos.com
 proxy-groups:
 - name: PROXY
   type: select
@@ -63,6 +70,7 @@ proxy-groups:
   - mao.kipfelmao.de5.net
   - Hong Kong 02 ss汐云
   - JP-vip-327
+  - HK-vip-119
   - DIRECT
 rules:
 - MATCH,PROXY
